@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+
+    > figure {
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        > a {
+            text-decoration: none;
+            color: inherit;
+    
+            > img {
+                width: 90px;
+            }
+        }
+    }
+
+    > h1 {
+        @include heading-style(1.8em, Arsenal_SC, 10px, 0, $black, bold, none, 1.4, left, none);
+    }
+
+    > h2 {
+        @include heading-style(1.2em, Raleway, 10px, 0, $black, none, none, 1.4, left, underline);
+    }
+    
+
+    @media #{$medium} {
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        >h1, >h2 {
+            text-align: right;
+            margin-left: 20px;
+            margin-top: 0;
+        }
+    }
+}
+
+
+
+
+/* Responsive Adjustments for larger screens */

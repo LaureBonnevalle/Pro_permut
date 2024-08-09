@@ -1,0 +1,64 @@
+
+
+// Mixin for box shadows
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+    box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin transition($properties, $duration: 0.3s, $timing-function: ease-in-out) {
+    transition: $properties $duration $timing-function;
+    -moz-transition: $properties $duration $timing-function;
+    -webkit-transition: $properties $duration $timing-function;
+}
+
+// Mixin for link styles
+@mixin link-style($color, $font-family, $text-transform, $line-height) {
+    background: transparent;
+    color: $color;
+    display: inline-block;
+    text-transform: $text-transform;
+    font-family: $font-family, sans-serif;
+    text-decoration: none;
+    line-height: $line-height;
+    @include transition(all);
+}
+  
+nav {
+    z-index: 1000;
+    padding: 0px;
+    @include box-shadow(0, 4px, 5px, -3px, $soothing_Breeze);
+    position: relative;
+    background-color: $white;
+
+    > div {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        > ul {
+            text-align: center;
+            margin: 10px 0 0px;
+            padding: 0;
+            list-style: none;
+
+            > li {
+                display: inline;
+                margin: 0 1px;
+                font-size: 1.5rem;
+
+                > a {
+                    @include link-style($american_River, 'Playwrite', uppercase, 20px);
+                    margin: 17px 32px;
+                }
+                > a:hover {
+                    outline: 0px;
+                    color: $electron_Blue;
+                    font-weight: 900;
+                    text-decoration: underline;
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+}

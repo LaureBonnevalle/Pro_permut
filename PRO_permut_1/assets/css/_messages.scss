@@ -1,0 +1,29 @@
+#errors, 
+#valid {	
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	color: $white;
+	border-radius: 20px;
+	padding: .5em 1em;
+	margin: auto auto 1.5em auto;
+	box-sizing: border-box;
+	border: 2px solid;
+
+	> img{
+		width: 6em;
+		margin-right: 4em;
+	}
+}
+
+#errors {	
+	border: $pink_Glamour;
+	background-color: $chi_Gong;
+}
+
+#valid {
+	border: $light_greenish_blue;
+	background-color: $mint_feaf;	
+}

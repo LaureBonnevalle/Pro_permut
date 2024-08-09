@@ -1,0 +1,76 @@
+2024-06-30 11:03:46 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:17:32 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:17:38 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:18:24 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:23:04 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:23:18 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:24:57 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:26:25 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:27:23 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:28:37 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:28:39 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:30:23 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:32:07 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:32:09 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:32:41 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:33:54 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:35:11 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:35:58 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:36:03 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-06-30 11:36:18 Erreur: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+2024-07-04 16:59:07 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.role' in 'field list'
+2024-07-04 16:59:56 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.role' in 'field list'
+2024-07-04 17:01:07 Erreur: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2024-07-06 19:23:20 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_id' in 'field list'
+2024-07-06 19:23:22 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_id' in 'field list'
+2024-07-06 19:23:27 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_id' in 'field list'
+2024-07-06 19:23:51 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_id' in 'field list'
+2024-07-06 19:23:52 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_id' in 'field list'
+2024-07-14 18:27:13 Erreur: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'argon71hotmailfr_permut.status' doesn't exist
+2024-07-14 18:27:15 Erreur: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'argon71hotmailfr_permut.status' doesn't exist
+2024-07-16 13:05:53 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:16:20 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:16:24 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:17:02 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:17:33 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:18:35 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:20:14 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:20:16 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:20:16 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:20:55 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:23:24 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:23:33 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:24:19 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:24:54 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:24:55 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:24:55 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:31:39 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'where clause'
+2024-07-16 13:48:17 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:48:39 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:49:03 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:49:04 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:49:04 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:49:04 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:49:06 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:49:07 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:50:04 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:50:05 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:50:05 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 13:52:47 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.created_at' in 'field list'
+2024-07-16 13:52:48 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.created_at' in 'field list'
+2024-07-16 13:52:49 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.created_at' in 'field list'
+2024-07-16 14:05:19 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 14:05:28 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'field list'
+2024-07-16 14:05:38 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u2.blockedLimit' in 'field list'
+2024-07-16 14:09:27 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.limit_time' in 'field list'
+2024-07-16 14:10:29 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.limit_time' in 'field list'
+2024-07-16 14:11:27 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.limit_time' in 'field list'
+2024-07-16 14:13:23 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.limit_time' in 'field list'
+2024-07-16 14:13:24 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.limit_time' in 'field list'
+2024-07-16 14:13:25 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.limit_time' in 'field list'
+2024-07-16 14:13:25 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.limit_time' in 'field list'
+2024-07-16 14:22:58 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'where clause'
+2024-07-16 15:01:26 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'where clause'
+2024-07-16 15:01:28 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'u1.blockedLimit' in 'where clause'
+2024-07-16 15:05:20 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit_time1' in 'where clause'
+2024-07-16 15:05:21 Erreur: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit_time1' in 'where clause'

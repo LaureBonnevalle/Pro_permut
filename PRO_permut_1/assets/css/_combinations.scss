@@ -1,0 +1,82 @@
+#btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  > button:nth-of-type(1) {
+    @include button-styles('default');
+  }
+  
+  > button:nth-of-type(2) {
+    @include button-styles('warning');
+  }
+  
+  > button:nth-of-type(3) {
+    @include button-styles('danger');
+  }
+}
+
+#card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: 'Raleway';
+
+  > table {
+      @include table-styles();
+      width: 95%;
+      margin: auto;
+      font-family: 'Raleway';
+      margin-top: 2rem;
+
+      > thead tr th {
+        background-color: $city_Lights;
+        border-radius: 25px;
+        font-size: 18px;
+        color: $dracula_Orchid;
+        border: none;
+      }
+
+      > tbody tr td {
+        text-align: center;
+        border: none;
+
+        > p {
+          font-family: 'Raleway';
+        }
+
+        > h3 {    
+          @include heading-style(26px, Raleway, 2rem, 3rem, $black, bold);
+        }
+      }
+  }
+
+  > div {
+    width: 100%;
+    @include flex-wrap-row-center();
+
+    > form {
+      width: 50%;
+
+      > input[name="valider"] {
+        @include button-styles('validate');
+      }
+
+      > input[name="regeter"] {
+        @include button-styles('danger');
+      }
+    }    
+  }
+
+  > h2 {    
+    @include heading-style(26px, Raleway, 2rem, 3rem, $black, bold, none, 1.4, left, underline);
+  }
+}

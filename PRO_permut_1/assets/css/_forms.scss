@@ -1,0 +1,57 @@
+#form {
+
+    background-color: #f4f4f9;
+    padding: 20px;
+
+    > h3 {
+        @include heading-style(34px, 'Raleway', 4rem, 3rem, $black, none, none, 1.4, center, underline);
+    }
+
+    > form {
+        width: 60%;
+        display: block;
+        margin: auto;           
+        font-family: 'Raleway';
+
+        > fieldset {
+            
+            > legend {
+                @include heading-style(24px, 'Playwrite', 2rem, 2rem, $black);
+            }
+
+            > label {
+                @include heading-style(20px, 'Playwrite', 2rem, 2rem, $black, 'none', 'none', 1.4, left, none);
+            }
+
+            > input:not([type="submit"]), 
+            > textarea, 
+            > select {                
+                @include form-element-styles;  
+            }
+
+            > input[name="soumettre"] {
+                @include button-styles('validate');
+            }
+
+            > input:not([type="submit"]):focus, 
+            > select:focus, 
+            > textarea:focus {
+                @include focus-state;
+            }      
+            
+            > div {
+                > input[name="captcha"] {
+                    @include form-element-styles;  
+                }
+            }
+        }
+    }
+
+    .error-message { 
+        color: $chi_Gong;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+

@@ -1,0 +1,104 @@
+
+@import "_colorsVars";
+@import "_mixins";
+@import "_responsive";
+@import "_reset";
+@import "_fonts";
+/*@import "_forms";*/
+/*@import "_buttons";*/
+@import "_messages";
+@import "_sessionMessage";
+
+@import "_header";
+@import "_nav";
+@import "_users";
+@import "_combinations";
+@import "_home";
+@import "_forms";
+@import "_footer";
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Arsenal SC', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: $dracula_Orchid;
+    background-color: $white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media #{$small} {
+        font-size: 16px;
+    }
+
+    @media #{$medium} {
+        font-size: 18px;
+    }
+
+    @media #{$large} {
+        font-size: 20px;
+    }
+
+    @media #{$extra} {
+        font-size: 22px;
+    }
+}
+
+
+
+
+// Représentation vectoriel de la page "home"
+.node {
+    stroke: #fff;
+    stroke-width: 1px;
+}
+.link {
+    stroke: #999;
+    stroke-opacity: 0.6;
+}
+.link.fonctionnaire-poste {
+    stroke: red; /* Les liaisons fonctionnaire-poste seront rouges */
+    stroke-width: 2px; /* Augmenter l'épaisseur pour plus de visibilité */
+}
+.link.fonctionnaire-dept {
+    stroke: blue; /* Les liaisons fonctionnaire-dept seront bleues */
+    stroke-width: 2px; /* Augmenter l'épaisseur pour plus de visibilité */
+}
+.link.choix {
+    stroke: green; /* Les liaisons choix seront vertes */
+    stroke-width: 2px; /* Augmenter l'épaisseur pour plus de visibilité */
+}
+
+.label {
+    font-size: 12px; /* Taille de police par défaut */
+}
+
+.label.identity {
+    font-size: 14px; /* Taille de police pour l'identité */
+}
+
+.label.poste {
+    font-size: 10px; /* Taille de police pour les postes */
+}
+
+.label.dept {
+    font-size: 10px; /* Taille de police pour les départements */
+}
+
+.label.choix {
+    font-size: 10px; /* Taille de police pour les choix */
+}

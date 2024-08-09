@@ -1,0 +1,62 @@
+#home {
+    
+    margin: 4rem;
+    color: $dracula_Orchid;    
+
+    > h3 {
+        @include heading-style(28px, Raleway, 4rem, 3rem, $black, none, none, 1.4, center, underline);
+    }
+
+    > article {
+        > h4 {
+            @include heading-style(22px, Raleway, 2rem, 3rem, $black, none, none, 1.4, left, underline);
+        }
+        
+        > img {
+            width: 550px;
+            height: 390px;
+            border-radius: 10px;
+        }
+
+        > svg {
+            border: 1px solid $soothing_Breeze;
+            border-radius: 10px;
+        }
+        
+        > p {
+            font-weight: 200;
+            color: $american_River;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            line-height: 1.7;
+        } 
+    }
+
+    > article:nth-child(odd) {
+        > img, svg {
+            float: left;
+            margin: 0 20px 0 20px;
+        }        
+    }
+
+    > article:nth-child(even) {
+        > img, svg {
+            float: right;
+            margin: 0 20px 0 20px;
+        }        
+    }
+
+    .texte-article {
+        margin-top: 2em;
+    }
+
+    .texte-article::first-letter {
+        font-size: 3em;
+        font-weight: bold; 
+        float: left;
+        margin-right: 0.1em;
+        line-height: 0.9;
+        margin-bottom: -0.1em;
+    }
+
+}

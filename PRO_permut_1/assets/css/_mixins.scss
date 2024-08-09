@@ -1,0 +1,208 @@
+/**
+ * Mixin to style all heading levels (h1, h2, h3, h4, h5, h6) and label with customizable options.
+ *
+ * @param {String|Number} $font-size      - The font size of the heading text.
+ * @param {String}        $font-family    - The font-family of the heading text.
+ * @param {String|Number} $margin-top     - The top margin of the heading.
+ * @param {String|Number} $margin-bottom  - The bottom margin of the heading.
+ * @param {String}        $color          - The color of the heading text.
+ * @param {String}        $font-weight    - The font weight of the heading text.
+ * @param {String}        $text-transform - The text transformation (uppercase, lowercase, capitalize, small-caps, none).
+ * @param {String}        $line-height    - The line height of the heading text.
+ * @param {String}        $text-align     - The text alignment (left, center, right, justify, justify-all, start, end).
+ * @param {String}        $text-decor     - The text decoration (none, underline, overline, line-through, blink).
+
+ *
+ * Use:
+ *    @include heading-style(36px, 'Arsenal SC',  20px, 15px, $black, bold, uppercase, 1.2, center, none);
+ */
+ @mixin heading-style($font-size: 24px, $font-family: 'Arsenal SC', $margin-top: 10px, $margin-bottom: 10px, $color: $black, $font-weight: normal, $text-transform: none,  $line-height: 1.4, $text-align: left, $text-decor: none) {  
+  font-size       : $font-size;
+  font-family     : $font-family, Arial;
+  margin-top      : $margin-top;
+  margin-bottom   : $margin-bottom;
+  color           : $color;
+  font-weight     : $font-weight;
+  text-transform  : $text-transform;
+  line-height     : $line-height;
+  text-align      : $text-align;
+  text-decoration : $text-decor;  
+}
+
+
+/**
+ * Mixin to style buttons based on their type.
+ *
+ * @param {String} $type - The type of button, can be 'danger', 'warning', 'validate', or other.
+ *
+ * Use:
+ *   @include button-styles('danger');
+ */
+@mixin button-styles($type) {
+
+  width: 20%;
+  display: block;
+  font-family: 'Playwrite', Arial;
+  font-size: 24px;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+  @if $type == 'danger' {
+    background-color: $chi_Gong;
+    color: $white;
+    border: 1px solid $chi_Gong;
+
+    &:hover {
+      background-color: $white;
+      color: $chi_Gong;
+    }
+  } @else if $type == 'warning' {
+    background-color: $bright_yarrow;
+    color: $white;
+    border: 1px solid $bright_yarrow;
+
+    &:hover {
+      background-color: $white;
+      color: $bright_yarrow;
+    }
+  } @else if $type == 'validate' { 
+    background-color: $mint_feaf;
+    color: $white;
+    border: 1px solid $mint_feaf;
+
+    &:hover {
+      background-color: $white;
+      color: $mint_feaf;
+    }
+  } @else {
+    background-color: $electron_Blue; // Default color
+    color: $white;
+    border: 1px solid $electron_Blue;
+
+    &:hover {
+      background-color: $white;
+      color: $electron_Blue;
+      // background-color: darken($electron_Blue, 10%);
+    }
+  }
+}
+
+
+/**
+  * Mixin to style tables with customizable options.
+  *
+  * @param {String} $border-color         - The color of the table borders.
+  * @param {String} $header-bg-color      - The background color of the table headers.
+  * @param {String} $header-text-color    - The text color of the table headers.
+  * @param {String} $row-hover-bg-color   - The background color of table rows on hover.
+  * @param {String} $striped-row-bg-color - The background color of striped table rows.
+  * @param {String} $text-color           - The text color of the table cells.
+  * @param {String} $padding              - The padding inside table cells.
+  * @param {String} $border-width         - The width of the table borders.
+  * @param {String} $border-style         - The style of the table borders.
+  *
+  * Use:
+  *   @include table-styles();
+*/
+@mixin table-styles( $border-color: $city_Lights, $header-bg-color: $white, $header-text-color: $dracula_Orchid , $row-hover-bg-color: $sour_lemon, $striped-row-bg-color: $city_Lights, $text-color: $dracula_Orchid, $padding: 8px, $border-width: 1px, $border-style: solid) {
+  width: 100%;
+  border-collapse: collapse;
+  color: $text-color;
+
+  th, td {
+    border: $border-width $border-style $border-color;
+    padding: $padding;
+    text-align: left;
+  }
+
+  th {
+    background-color: $header-bg-color;
+    color: $header-text-color;
+  }
+
+  tr:nth-child(even) {
+    background-color: $striped-row-bg-color;
+  }
+
+  tr:hover {
+    background-color: $row-hover-bg-color;
+  }
+}
+
+
+/**
+ * Mixin to style elements in the focus state.
+ *
+ * This mixin applies various styles to an element when it is in focus.
+ *
+ * @param {String} $border-color  - The color of the border when the element is in focus.
+ * @param {String} $border-radius - The radius of the border corners.
+ * @param {String} $font-size     - The font size of the element's text.
+ * @param {String} $padding       - The padding inside the element.
+ * @param {String} $margin        - The margin around the element.
+ */
+@mixin focus-state {  
+  outline: none; // Removes the default outline applied by browsers when the element is in focus
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 4px solid $dracula_Orchid;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+
+/**
+ * Mixin to apply consistent styles to form elements such as input fields, textareas, and buttons.
+ *
+ * This mixin provides a base styling for form elements, which can be customized further as needed.
+ * It ensures a consistent look and feel across various form components by setting common properties like padding,
+ * border, and font size. It also includes styles for focus states to enhance user experience.
+ *
+ * Use:
+ *   @include form-element-styles;
+ */
+@mixin form-element-styles {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: .3rem;
+  border: 1px solid $soothing_Breeze;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+/* 
+ * Placeholder for common flex container styles that will be used as a base for other flex containers 
+ */
+%flex-wrap-center {  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 
+ * Mixin for flex containers that need to align items in a row and center them 
+ */
+@mixin flex-wrap-row-center {
+  @extend %flex-wrap-center; // Inherits common flex container styles from %flex-wrap-center
+  flex-direction: row;
+}
+
+/* 
+ * Mixin for flex containers that need to align items in a column and center them 
+ */
+@mixin flex-wrap-column-center {
+  @extend %flex-wrap-center; // Inherits common flex container styles from %flex-wrap-center
+  flex-direction: column;
+}
